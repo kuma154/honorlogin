@@ -1,0 +1,688 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5f5f5;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --primary-color:linear-gradient(90deg,#b15cff 0%,#0ceee3 100%);
+   
+}
+.clearfix:after {
+  content: "\00A0";
+  display: block;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+header{
+    width: 100%;
+    position: fixed;
+
+    margin-top: -67px;
+    z-index: 2;
+    background-color: black;
+    overflow: hidden;
+}
+header .container{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 67px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+header .container .header-logo{
+   width: 140px;
+   height: 27px;
+}
+header .container .header-logo img{
+    width: 100%;
+}
+header .container > nav{
+    justify-self: center;
+    text-align: center;
+    
+}
+header .container > nav ul{
+    display: flex;
+    
+}
+header .container > nav ul li a{
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 16px;
+}
+header .container > nav ul li a:hover{
+    font-weight: bold;
+}
+.header-login{
+    justify-self: end;
+    text-align: end;
+    cursor: pointer;
+}
+.header-login span{
+    padding: 0 10px;
+}
+.header-login span i.fa{
+    color: aliceblue;
+}
+
+
+.glide{
+    margin-top: 67px;
+    width: 100%;
+    overflow: hidden;
+    height: 700px;
+}
+.glide .glide__track .glide__slide .slide-caption img{
+    background: center center no-repeat/cover;
+}
+
+.phone{
+    background-color: #f5f5f5;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.phone .main{
+
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+   justify-content: space-around;
+
+   
+}
+.phone .main .phone-bus{
+
+    width: 25%;
+    padding: 15px;
+    overflow: hidden;
+  
+}
+.phone .main .phone-bus .phone-msg{
+      display: flex;
+      background-color: #fff;
+      padding: 50px 30px;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+ 
+}
+.phone .main .phone-bus .phone-msg:hover{
+    box-shadow:  0px 7px 7px -7px #5E5E5E;
+    
+}
+.phone .main .phone-bus .phone-msg:hover .phone-img img{
+    transform: scale(1.2);
+  
+
+}
+.phone .main .phone-bus .phone-msg h2{
+    font-size: 24px;
+    padding: 0 10px 0 20px;
+}
+.phone .main .phone-bus .phone-msg p{
+    font-size: 16px;
+    padding: 25px 0;
+}
+.phone .main .phone-bus .phone-msg .phone-img{
+    width: 230px;
+    height: 230px;
+    margin: auto;
+    text-align: center;
+}
+.phone .main .phone-bus .phone-msg .phone-img img{
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.more{
+    width: 100%;
+    padding: 100px 0;
+  
+}
+
+.more .main{
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+.more-msg{
+    width: 49%;
+    height: 360px;
+    position: relative;
+    
+
+}
+.more-msg-title{
+    position: absolute;
+    width: 80%;
+    background-color: #fff;
+    padding: 30px 15px;
+    left: 10%;
+    bottom: -50px;
+    transition: all 0.4s ease-in-out;
+}
+.more-msg-title p{
+    padding: 10px 0;
+}
+.more-msg-title h2{
+    padding: 20px 0;
+}
+.more-msg-title:hover{
+   box-shadow:  0px 7px 7px -7px #5E5E5E;
+   background: linear-gradient(90deg,#b15cff 0%,#0ceee3 100%); 
+   border-image: linear-gradient(90deg,#b15cff 0%,#0ceee3 100%);
+   
+}
+.more-msg:nth-child(1){
+    float: left;
+    background: url("https://www.honor.cn/content/dam/honor/cn/activity/all-scenario-intelligence/imgs/kv-pc.jpg") no-repeat center center/cover;
+}
+.more-msg:nth-child(2){
+    float: right;
+    background: url("http://sa.honor.cn/honor30/images/ps1.png") no-repeat center center/cover;
+
+}
+
+
+footer{
+    border-top: 1pxs solid #5E5E5E;
+    width: 100%;
+    padding: 50px 0;
+}
+footer .main{
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+footer .main .foot-address{
+    width: 69%;
+    float: left;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+footer .main .foot-address ul li{
+    padding: 8px 0;
+}
+footer .main .foot-address ul li:nth-child(1){
+    font-weight: bold;
+}footer .main .foot-address .border{
+    border-right: 1px solid rgb(94, 94, 94);
+   
+
+
+
+}
+footer .main .foot-address ul li a{
+    color: #000;
+}
+footer .main .footer-msg{
+
+    padding-left: 20px;
+    width: 30%;
+    float: right;
+}
+footer .main .footer-msg > *{
+    margin-bottom: 20px;
+}
+footer > p{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 12px;
+}
+
+.logo-video{
+    margin-top: 67px;
+    width: 100%;
+
+}
+.logo-video video{
+    width: 100%;
+    height: 850px;
+
+}
+
+.banner{
+    width: 100%;
+    padding: 120px 0;
+}
+.banner .main{
+    max-width: 80%;
+    height: 479px;
+    background-color: black;
+    margin: 0 auto;
+}
+.banner .main .banner-sec{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+}
+.banner .main .i1{
+      background: url("https://www.honor.cn/content/dam/honor/cn/brand/category/i1-pc.jpg") no-repeat center center/cover;
+}
+.banner .main .i2{
+    background: url("https://www.honor.cn/content/dam/honor/cn/brand/category/i2-pc.jpg") no-repeat center center/cover;
+}
+.banner .main .i3{
+    background: url("https://www.honor.cn/content/dam/honor/cn/brand/category/i3-pc.jpg") no-repeat center center/cover;
+}
+.banner .main .banner-sec .banner-main{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+    left: 12%;
+    top: -80px;
+    padding: 15px;
+}
+.banner .main .banner-sec .banner-main .banner-img{
+    width: 60%;
+    height: 120px;
+    margin-bottom: 100px;
+}
+.banner .main .banner-sec .fl{
+   left: 70%;
+}
+.banner .main .banner-sec .banner-main .banner-img img{
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center/cover;
+}
+.banner .main .banner-sec .banner-main h2{
+    font-size: 21px;
+    word-spacing: 8px;
+    font-weight: normal;
+
+}
+.banner .main .banner-sec .banner-main .banner-linerg{
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(90deg,#b15cff 0%,#0ceee3 100%);
+    margin: 10px 0;
+}
+.banner .main .banner-sec .banner-main p{
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+.banner .main .banner-sec .banner-main h4{
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+
+.activity{
+    width: 100%;
+}
+.activity > h2{
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 80%;
+    text-align: center;
+}
+.activity .main{
+    max-width: 80%;
+
+   
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 12px;
+
+
+}
+.activity .main .ac-banner{
+    position: relative;
+    overflow: hidden;
+   
+    background-color: blanchedalmond;
+    height: 516px;
+  
+}
+.activity .main .ac-banner h2{
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.activity .main .ac-banner img{
+    position: absolute;
+    display: block; 
+     transition: all 0.4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center/cover;
+}
+.activity .main .ac-banner img:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+.help-banner{
+    width: 100%;
+    height: 520px;
+    position: relative;
+    margin-top: 67px;
+}
+.help-banimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.help-text{
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 20%;
+
+    text-align: center;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+.help-text h2{
+    font-size: 44px;
+}
+.help-text h3{
+    font-size: 32px;
+    padding: 15px 0;
+}
+.help-banimg img{
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center/cover;
+}
+.help-search {
+    position: absolute;
+    width: 60%;
+    height: 150px;
+
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+.search-bar{
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+}
+.search-bar input{
+    border: 1px solid #b15cff;
+    border-radius: 20px;
+    outline: none;
+   padding: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    text-indent: 44px;
+    font-size: 16px;
+    line-height: 40px;
+    width: 80%;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+}
+.search-bar span{
+    font-weight: 100;
+    left: 13%;
+   
+    transform: translateX(-50%);
+    height: 30px;
+    line-height: 40px;
+    font-size: 30px;
+    position: absolute;
+    z-index: 2;
+}
+
+.help-phone{
+    width: 100%;
+}
+.help-phone .main{
+    padding: 60px 0;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.help-phone .main > h2{
+    font-size: 32px;
+    padding: 15px 0;
+}
+.help-phone .main > p{
+    font-size: 16px;
+    padding: 20px 0;
+}
+.help-pbox{
+    width: 100%;
+    padding: 30px 0;
+}
+.help-phone .main .help-phones{
+   
+ 
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.help-phone .main .help-phones .phones{
+ background-color: #fff;
+    padding: 30px 0;
+}
+.help-phone .main .help-phones .phones:hover{
+    box-shadow:  0px 7px 7px -7px #5E5E5E;
+    transform: scale(1.05);
+}
+.help-phone .main .help-phones .phones img{
+    transition: all 0.4s ease-in-out;
+}
+.help-phone .main .help-phones .phones:hover img{
+    transform: scale(1.2);
+}
+
+
+.help-sever{
+    width: 100%;
+    overflow: hidden;  
+    padding-top: 80px;
+}
+.help-sever .main{
+  max-width: 80%;
+  margin: 0 auto;
+
+  
+}
+.help-sever .main > h2{
+    font-size: 32px;
+}
+.help-sever .main > h2,p{
+    text-align: center;
+    padding: 15px 0;
+}
+.sever-bar{
+    margin-top: 30px;
+    width: 100%;
+    height: 323px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sever-bar .sever-img{
+    width: 100%;
+    height: 100%;
+
+}
+.sever-bar .sever-img img{
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center/cover;
+}
+.sever-bar .sever-msgBox{
+    padding: 40px;
+    background-color: #fff;
+}
+.sever-bar .sever-msgBox h2{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.sever-bar .sever-msgBox p{
+    text-align: left;
+    font-size: 14px;
+    line-height: 2rem;
+    padding-bottom: 80px;
+}
+.sever-bar .sever-msgBox a{
+
+    color: #b15cff;
+
+}
+
+.help-sever .help-pbox{
+    width: 100%;
+    padding-top: 60px;
+   
+}
+.help-sever .help-phones{
+     display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr  1fr;
+    text-align: center;
+}
+.help-sever .help-phones .phones{
+    background-color: #fff;
+       padding: 60px 30px;
+ }
+ .help-sever .help-phones .phones h2{
+     padding:  30px 0 10px 0;
+     font-size: 18px;
+ }
+ .help-sever .help-phones .phones p{
+     font-size: 14px;
+ }
+ .help-sever .help-phones .phones .phones-img{
+     width: 40px;
+     height: 40px;
+     text-align: center; 
+      margin: 0 auto;
+
+ }
+ .help-sever .help-phones .phones .phones-img img{
+     width: 100%;
+     height: 100%;
+     background: no-repeat center center/cover;
+ }
+
+
+ .help-que{
+     width: 100%;
+     padding: 60px 0;
+     background-color: #fff;
+ }
+ .help-que .main{
+     max-width: 80%;
+     margin: 0 auto;
+ }
+ .help-que .main h2{
+     font-size: 32px;
+     padding: 20px 0;
+     text-align: center;
+ }
+ .help-que .main > a{
+     display: block;
+     text-align: center;
+     font-size: 16px;
+     color: #b15cff;
+ }
+ .help-que .main .queBox{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+ }
+ .help-que .main .queBox .questions{
+     padding: 40px;
+ }
+ .help-que .main .queBox .questions a{
+     color: #222;
+     display: block;
+     padding: 30px 0;
+     font-size: 20px;
+ }
+ .help-que .main .queBox .questions a:hover{
+    font-weight: bold;
+ }
+ .help-conn{
+     padding: 40px 0;
+     width: 100%;
+     overflow: hidden;
+ }
+ .help-conn h2{
+     text-align: center;
+     font-size: 32px;
+     padding: 20px 0;
+ }
+ .help-conn .main{
+     max-width: 80%;
+     margin: 0 auto;
+     overflow: hidden;
+    
+ }
+ .conn-img{
+     width: 100%;
+      height: 190px;
+ }
+ .help-conn .main img{
+     width: 100%;
+     height: 100%;
+     background: no-repeat center center/cover;
+ }
+ .help-conn .main .conn-addresses{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+ }
+ .help-conn .main .conn-address{
+     padding: 30px 0;
+ }
+ .help-conn .main .conn-address p{
+     font-weight: bold;
+ }
+ .help-conn .main .conn-address a{
+     text-align: center;
+     color: #222;
+     display: block;
+     padding: 15px 0;
+ }
+ 
